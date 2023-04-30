@@ -16,7 +16,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // Put you credentials here
+  apiKey: "AIzaSyD-lUe-kz-Gw7Y1adqoFcLDIc5k6ipq2SQ",
+  authDomain: "prueba-bd-blogger.firebaseapp.com",
+  projectId: "prueba-bd-blogger",
+  storageBucket: "prueba-bd-blogger.appspot.com",
+  messagingSenderId: "25355845163",
+  appId: "1:25355845163:web:9c52fb21388030bd33b46e",
+  measurementId: "G-NFXBDTXGPF"
 };
 
 // Initialize Firebase
