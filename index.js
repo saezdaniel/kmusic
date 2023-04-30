@@ -1,3 +1,5 @@
+console.log(Importando script);
+
 import {
   onGetTasks,
   saveTask,
