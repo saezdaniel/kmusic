@@ -48,4 +48,4 @@ export const updateTask = (id, newFields) =>
 
 export const getTasks = () => getDocs(collection(db, "tasks"));
 
-Console.log('firebase js importado');
+console.log('firebase js importado');
