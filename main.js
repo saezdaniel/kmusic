@@ -1,1 +1,1 @@
-console.log(Importando archivos);
+console.log('Importando archivos');
