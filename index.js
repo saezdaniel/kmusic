@@ -5,7 +5,7 @@ import {
   getTask,
   updateTask,
   getTasks,
-} from "./firebase.js";
+} from "https://www.kichwamusic.com/main/index.js";
 
 const taskForm = document.getElementById("task-form");
 const tasksContainer = document.getElementById("tasks-container");
