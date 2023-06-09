@@ -1,3 +1,10 @@
+/* Script exclusivo para kichwamusic
+Por: Infinity Estudio - Saez Daniel
+Fecha: 09/06/23 
+Web: infinityestudio.com
+*/
+console.log('main.js cargado');
+
 //Funcion parametro
 function getUrlP(parametro) {
   const queryString = window.location.search;
