@@ -5,7 +5,7 @@ Web: infinityestudio.com
 */
 console.log('main.js cargado');
 
-//Funcion parametro
+/* ==== function Parametro ==== */
 function getUrlP(parametro) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -13,6 +13,17 @@ function getUrlP(parametro) {
 }
 //Uso getUrlP('param2');
 
+/* ==== function Alert ==== */
+$( "#alerta" ).click(function(){$('#alerta').removeClass('activado');});
+
+function alerta(texto) { 
+  $('#alerta').addClass('activado').text(texto); 
+    setTimeout( function() { 
+    $('#alerta').removeClass('activado'); 
+    }, 3000);  
+};
+
+/* ==== function crypt ==== */
 const crypt = (salt, text) => {
   const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
   const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
