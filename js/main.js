@@ -1,3 +1,11 @@
+//Funcion parametro
+function getUrlP(parametro) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get(parametro);
+}
+//Uso getUrlP('param2');
+
 const crypt = (salt, text) => {
   const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
   const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
