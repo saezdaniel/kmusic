@@ -14,6 +14,9 @@ function getUrlP(parametro) {
 //Uso getUrlP('param2');
 
 /* ==== function Alert ==== */
+var alCn = $('<div></div>').attr('id', 'alerta');
+  $('body').append(alCn);
+
 $( "#alerta" ).click(function(){$('#alerta').removeClass('activado');});
 
 function alerta(texto) { 
