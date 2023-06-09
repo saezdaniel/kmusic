@@ -5,13 +5,20 @@ Web: infinityestudio.com
 */
 console.log('main.js cargado');
 
-/* ==== function Parametro ==== */
+/* [function Parametro] */
 function getUrlP(parametro) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   return urlParams.get(parametro);
 }
 //Uso getUrlP('param2');
+//Eliminar parametro
+function delUrlP(parameter) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete(parameter);
+  window.history.replaceState({}, "", url);
+}
+/* [/function Parametro] */
 
 /* ==== function Alert ==== */
 var alCn = $('<div></div>').attr('id', 'alerta');
